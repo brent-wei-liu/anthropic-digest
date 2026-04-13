@@ -110,8 +110,8 @@
 **query 输出 JSON 结构：**
 ```json
 {
-  "meta": { "days", "date", "article_count" },
-  "articles": { "按分类分组的文章数据" },
+  "meta": { "date", "days", "article_count", "categories" },
+  "articles": [ "文章列表（flat list，content 截断到 1500 字符为 content_preview）" ],
   "prompts": {
     "draft": "完整的初稿 Prompt（文章数据已嵌入）",
     "critique_template": "审稿模板（{draft} 占位符）",

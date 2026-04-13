@@ -2,9 +2,8 @@
 """
 Anthropic Blog Digest Generator — outputs article data + prompt template.
 
-Unlike other digests, Anthropic digest uses a single high-quality prompt
-(not 3-step) because articles are fewer but longer. The prompt already
-includes analyst-level instructions.
+Outputs JSON to stdout with article data + 3-step prompt templates.
+Agent orchestrates Draft → Critique → Refine via delegate_task.
 
 Usage:
   python3 digest_generate.py query [--days 14]
